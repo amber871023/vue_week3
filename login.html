@@ -30,7 +30,7 @@
             請先登入
           </h1>
           <div class="col-8">
-            <form id="form" class="form-signin">
+            <form @submit.prevent="login" id="form" class="form-signin">
               <div class="form-floating mb-3">
                 <input type="email" class="form-control" id="username"
                   placeholder="name@example.com" required autofocus
